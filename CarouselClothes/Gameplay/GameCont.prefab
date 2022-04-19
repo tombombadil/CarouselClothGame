@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1152681695353445288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1152681695353445291}
+  - component: {fileID: 1623539458}
+  - component: {fileID: 8623903291001064991}
+  - component: {fileID: 1152681695353445295}
+  - component: {fileID: 555715871711494941}
+  - component: {fileID: 1152681695353445290}
+  - component: {fileID: 4004498936948950910}
+  m_Layer: 0
+  m_Name: GameCont
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1152681695353445291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152681695353445288}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1623539458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152681695353445288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193c55a951db74a0da81c8472a218bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameStarted: 0
+  EventGameStatus:
+    m_PersistentCalls:
+      m_Calls: []
+  Levels:
+  - Level: 1
+    List:
+    - InsertType: 1
+      StartIndex: 0
+      Elements:
+      - Prefabs: []
+        isRandom: 0
+        Count: 0
+      - Prefabs: []
+        isRandom: 0
+        Count: 0
+      - Prefabs: []
+        isRandom: 0
+        Count: 0
+      PrefabEnd: {fileID: 0}
+      SpawnDirection: {x: 0, y: 0, z: 1}
+      SpaceMin: {x: 0, y: 0, z: 0}
+      SpaceMax: {x: 0, y: 0, z: 0}
+      ReferenceForLimit: {fileID: 0}
+      Limits: {x: 0, y: 0, z: 0}
+--- !u!114 &8623903291001064991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152681695353445288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd53eff4096c4c17ae4da6d2dfd0fa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameStarted: 0
+  EventGameStatus:
+    m_PersistentCalls:
+      m_Calls: []
+  Steps: []
+  EventStepStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  EventStepCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  EventAnimStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  EvnetAnimCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  UICursor: {fileID: 0}
+  currStepAnim: 0
+  cursor: {fileID: 0}
+--- !u!114 &1152681695353445295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152681695353445288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bb28015ec1e17341968f7d5ae0ecd68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameStarted: 0
+  EventGameStatus:
+    m_PersistentCalls:
+      m_Calls: []
+  ListElements:
+  - Id: Coin
+    Prefabs:
+    - {fileID: 7699344819701992604, guid: ac3f422f4750e2e438941c06c60c2046, type: 3}
+    listGameobjects: []
+--- !u!114 &555715871711494941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152681695353445288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2863542dea4b442981c50a20ce8c72e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameStarted: 0
+  EventGameStatus:
+    m_PersistentCalls:
+      m_Calls: []
+  CurrLevel: 0
+  LevelTotalTime: 0
+  GameOverWhenTimeExceed: 0
+--- !u!114 &1152681695353445290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152681695353445288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b7d0694338b25949ba4c9b2f8fbb7e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameStarted: 0
+  EventGameStatus:
+    m_PersistentCalls:
+      m_Calls: []
+  PoolPrefabs: []
+--- !u!114 &4004498936948950910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152681695353445288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef7457034e4f4a7d90a3bd4070d0cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameStarted: 0
+  EventGameStatus:
+    m_PersistentCalls:
+      m_Calls: []
+  DebugMode: 0
+  DebugLogLevel: 0
+  UsingPoolSpawning: 1
+  Version: beta v1.0
+  IsStartedGame: 0
+  sceneCont: {fileID: 0}
+  uiCont: {fileID: 0}
+  DebugLevel: -1
+  SimulateFPS: 0
+  Level: {fileID: 0}

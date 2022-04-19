@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3551755188384207738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3061294162402231856}
+  - component: {fileID: 6749647921856288906}
+  - component: {fileID: 6956550181739412591}
+  m_Layer: 0
+  m_Name: CoinDropper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3061294162402231856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3551755188384207738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.79, y: 0, z: 23.12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6749647921856288906
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3551755188384207738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.650622, y: 0.7731705, z: 6.8138046}
+  m_Center: {x: 0.5877688, y: -0.113414764, z: 0.26914787}
+--- !u!114 &6956550181739412591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3551755188384207738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0678bfa80576a474da5fb5c3a8a64fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameStarted: 1
+  EventGameStatus:
+    m_PersistentCalls:
+      m_Calls: []
+  IsListenTouchEvent: 0
+  IsStoreCollisions: 0
+  IsStoreTriggers: 0
+  rb: {fileID: 0}
+  EventCollision:
+    m_PersistentCalls:
+      m_Calls: []
+  PrefabName: 
+  Score:
+    defaultValue: 2
+    ValueType: 1
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minValue: 0
+    maxValue: 0
+    multipleFactor: 0
+    additionFactor: 0
+  Prefab: {fileID: 5681584613553927033, guid: f41eef8fa64a06e41b556f279dc9e7ab, type: 3}
+  Amount: 10
+  DropOffset: {x: 0, y: 4, z: 0}
+  DropTweenTime: 0.5
+  DropTweenTimeInterval: 0.05
+  TargetViewport: {x: 0.9, y: 0.9}
+  TargetRotation: {x: 0, y: 0, z: 0}
+  PickupTweenTime: 0.4
+  TweenTimeIntervalRange: {x: 0, y: 0.05}
+  ScaleOnTarget: {x: 1, y: 1, z: 1}
+  RuleTouch:
+    Enabled: 0
+  RuleAuto:
+    Enabled: 0
+    Time: 0.2
